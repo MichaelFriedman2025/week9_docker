@@ -39,3 +39,7 @@ docker build -t shopping-server2:v1 .
 docker run --name server2 -v fastapi-db:/app/db -p 8001:8000 shopping-server2:v1
 ```
 
+### Run the container with bind-mount
+```bash
+docker run --name server2 -v fastapi-db:/app/db -v C:\Users\LENOVO\Desktop\week9_test\server2\data:/app/data -p 8001:8000 shopping-server2:v1
+```
